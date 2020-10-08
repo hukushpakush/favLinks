@@ -32,6 +32,7 @@ class LinkContainer extends React.Component {
 
                 <h3>Add New</h3>
                 {/*TODO - Add Form Component */}
+                <Form/>
             </div>
         );
     }
