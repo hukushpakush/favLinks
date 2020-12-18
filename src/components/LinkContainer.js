@@ -8,7 +8,6 @@ class LinkContainer extends React.Component {
         this.state = {
             favLinks: []
         };
-        /* TODO - Create state object for storing favLinks */
     }
 
     removeCharacter = index => {
@@ -16,9 +15,6 @@ class LinkContainer extends React.Component {
         this.setState(({ favLinks }) => ({
             favLinks: favLinks.filter((_, i) => i !== index)
           }));
-        /*
-            TODO - Create logic for setting the state to filter array and remove favLink at index
-        */
     }
 
     handleSubmit = favLink => {
@@ -26,9 +22,7 @@ class LinkContainer extends React.Component {
         this.setState(({ favLinks }) => ({
             favLinks: [favLink, ...favLinks]
           }));
-        /*
-            TODO - Create logic to setState and add new favLink to favLinks array in state
-        */
+
     }
 
     render() {
